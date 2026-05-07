@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação para Todos - ODS 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Portal ODS 4: Educação de Qualidade</h1>
+        <p>Promovendo oportunidades de aprendizagem para todos.</p>
+    </header>
+
+    <main>
+        <section id="quiz-container">
+            <h2>Desafio de Conhecimento</h2>
+            <p>O que significa a ODS 4?</p>
+            <button onclick="verificarResposta('a')">A) Educação Inclusiva</button>
+            <button onclick="verificarResposta('b')">B) Apenas cursos técnicos</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

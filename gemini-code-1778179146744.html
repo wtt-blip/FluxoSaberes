@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação de Qualidade | ODS 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Educação de Qualidade</h1>
+        <p>Objetivo de Desenvolvimento Sustentável 4</p>
+    </header>
+
+    <main>
+        <section id="quiz-container">
+            <h2>🚀 Desafio Interativo</h2>
+            <p>A ODS 4 visa garantir que a educação seja inclusiva para todos até qual ano?</p>
+            
+            <div class="options">
+                <button onclick="verificar('2025')">2025</button>
+                <button onclick="verificar('2030')">2030</button>
+                <button onclick="verificar('2050')">2050</button>
+            </div>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
